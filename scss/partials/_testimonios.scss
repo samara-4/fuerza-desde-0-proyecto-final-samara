@@ -1,0 +1,99 @@
+/*Estilos de la pagina de Testimonios*/
+.testimonio-bootstrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: rgba(78, 85, 22, .6);
+    height: 90vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+.accordion-item {
+    background-color: #a2b7a7;
+    border-radius: 10px;
+    border: none;
+}
+.accordion-item h2 {
+    padding: 1em;
+    font: inherit;
+}
+.accordion-button {
+    background-color: #a2b7a7;
+    border: none;
+}
+.collapseTwo {
+    background-color: #a2b7a7;
+}
+/*Media queries testimonio para pantalla de 1440px*/
+@media screen and (max-width:1440px) {
+    .testimonio-bootstrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: rgba(78, 85, 22, .6);
+        height: 90vh;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+/*Media queries testimonio para pantalla de 1024px*/
+@media screen and (max-width:1024px) {
+    .testimonio-bootstrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: rgba(78, 85, 22, .6);
+        height: 90vh;
+        width: 95vw;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+}
+/*Media queries testimonio para pantalla de 768px*/
+@media screen and (max-width:768px) {
+    .testimonio-bootstrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: rgba(78, 85, 22, .6);
+        height: 90vh;
+        width: 94vw;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+}
+/*Media queries testimonio para pantalla de 425px*/
+@media screen and (max-width:425px) {
+    .testimonio-bootstrap {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: rgba(78, 85, 22, .6);
+        height: 90vh;
+        width: 44vw;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+}

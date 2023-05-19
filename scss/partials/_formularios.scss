@@ -1,0 +1,126 @@
+/*Estilos de los formularios de pagina coaching y dudas*/
+.formulario {
+    min-height: 600px;
+    padding: 80px 0;
+    background-image: linear-gradient(to top, #deecdd 0%, #E5E8E8 100%);
+    background-color: #deecdd;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.formulario-dos {
+    min-height: 600px;
+    padding: 80px 0;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    background-image: linear-gradient(to top, #6f796e 0%, #a8c4ab 100%);
+    background-color: #6f796e;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.main {
+    margin: auto;
+    width: 90%;
+    max-width: 1000px;
+    background-image: linear-gradient(to bottom, #d1d1d1 0%, #a2b7a7 100%);
+    overflow: hidden;
+    padding: .7em;
+    border-radius: 1em;
+
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    gap: .6em;
+
+    animation: mostrar 1.5s ease-in-out;
+}
+@keyframes mostrar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.formulario-figure {
+    overflow: hidden;
+    border-radius: 1rem;
+    display: flex;
+}
+.formulario-img {
+    margin: auto;
+    max-width: 60vw;
+    width: 80%;
+    border-radius: 1rem;
+}
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 3em .7em;
+    text-align: center;
+}
+.main-input {
+    width: 80%;
+    max-width: 500px;
+    margin: .3em 0;
+    outline: none;
+    border: none;
+    padding: 1em;
+    font: inherit;
+    border-radius: .6em;
+}
+.formulario-boton {
+    background-color: rgba(52, 58, 8, 0.8);
+    color: #fff;
+    font-weight: 600;
+    &:hover{
+        background-color: #08270f;
+    }
+}
+.formulario-titulo {
+    font-size: 2.3rem;
+}
+.formulario-parrafo {
+    margin: .3em 0;
+}
+/*Media queries para pantalla de 768px*/
+@media (max-width:768px) {
+    .formulario {
+        min-height: 600px;
+        padding: 80px 0;
+        background-image: linear-gradient(to top, #deecdd 0%, #E5E8E8 100%);
+        background-color: #deecdd;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-left: 0vh;
+        margin-right: 0vh;
+    }
+    .formulario-dos {
+        min-height: 600px;
+        padding: 80px 0;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        background-image: linear-gradient(to top, #6f796e 0%, #a8c4ab 100%);
+        background-color: #6f796e;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+}
+/*Media queries para pantalla de 425px*/
+@media (max-width:425px) {
+.formulario-dos {
+    min-height: 600px;
+    padding: 80px 0;
+    margin-left: 0vh;
+    margin-right: 0vh;
+    background-image: linear-gradient(to top, #6f796e 0%, #a8c4ab 100%);
+    background-color: #6f796e;
+    background-repeat: no-repeat;
+    display: flex;
+    width: 51vh;
+}
+}

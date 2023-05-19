@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+/*CSS de todo el sitio web*/
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-size: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+a {
+    text-decoration: none;
+    color: rgba(36, 39, 14, 0.6);
+}
+/*Estilos del menu*/
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: #E5E8E8;
+}
+.img-logo {
+    width: 174px;
+    margin: 1rem 1rem 1rem 0;
+}
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 1rem;
+    li {
+        margin-right: 1.5rem;
+        &:last-child {
+            background-color: rgba(78, 85, 22, .6);
+            border: 2px solid rgba(78, 85, 22, .6);
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.2rem;
+        }
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
+.nav-icon img {
+    width: 85px;
+    height: 85px;
+    border-radius: 2px;
+}
+.nav-icon, #check {
+    display: none;
+}
+/*Estilos de los textos*/
+h1 {
+    font-size: 3rem;
+    font-family: 'Rubik', sans-serif;
+    text-shadow: 4px 4px 4px rgba(78, 85, 22);
+    margin: 20px;
+}
+h2 {
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 30px;
+    padding: 20px;
+}
+h3 {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    margin: 20px;
+}
+p {
+    font-size: 1rem;
+    padding: 15px;
+    text-align: justify;
+}
+/*Estilos de las secciones 1 y 2 de cada pagina*/
+.parte-uno {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: rgba(78, 85, 22, .6);
+    height: 90vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.parte-dos {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    background-color: #E5E8E8;
+    margin-top: -30px;
+    height: 90vh;
+}
+
+/*Media queries generales para pantalla de 1024px*/
+@media screen and (max-width:1024px) {
+    .encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: #E5E8E8;
+        width: 95vw;
+    }
+    .parte-dos {
+        background-color: #E5E8E8;
+        margin-top: -30px;
+        height: 97vh;
+        width: 95vw;
+        margin-left: 10vh;
+        margin-right: 10vh;
+
+    }
+}
+/*Media queries generales para pantalla de 884px*/
+@media screen and (max-width:884px) {
+    /*Estilos imagen logo*/
+    .portada-web img {
+        width: 357px;
+        margin-top: 68px;
+    }
+    /*Estilos menu hamburguesa*/
+    .checkbtn {
+        display: block;
+    }
+    .nav-icon {
+        display: block;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul {
+        display: block;
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background: #E5E8E8;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li:last-child {
+        background: none;
+        border: none;
+        padding: 1rem;
+    }
+    #check:checked~ul {
+        left: 0;
+        transition: all 0.25s;
+    }
+}
+/*Media queries generales para pantalla de 768px*/
+@media screen and (max-width:768px) {
+    /*Estilos del nav*/
+    .encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: #E5E8E8;
+        width: 94vw;
+    }
+    .nav-icon img {
+        width: 75px;
+        height: 75px;
+        border-radius: 2px;
+    }
+    .img-logo {
+        width: 113px;
+        margin: 1rem 1rem 1rem 0;
+    }
+    /*Estilos parte uno*/
+    .parte-uno {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: rgba(78, 85, 22, .6);
+        height: 60vh;
+        width: 94vw;
+        margin-left: 0vh;
+        margin-right: 0vh;
+    }
+    /*Estilos parte 2*/
+    .parte-dos {
+        margin-left: 0vh;
+        margin-right: 0vh;
+        background-color: #E5E8E8;
+        margin-top: -30px;
+        height: 153vh;
+        width: 94vw;
+    }
+    /*Estilos de texto*/
+    h1 {
+        font-size: 1.5rem;
+        font-family: 'Rubik', sans-serif;
+        text-shadow: 4px 4px 4px rgba(78, 85, 22);
+        margin: 54px;
+    }
+}
+/*Media queries generales para pantalla de 425px*/
+@media screen and  (max-width:425px) {
+    .encabezado {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-right: 2rem;
+        margin-left: -5rem;
+        background-color: #E5E8E8;
+        width: 44vw;
+    }
+    .img-logo {
+        width: 98px;
+        margin: 1rem 1rem 1rem 6rem;
+    }
+    .nav-icon {
+        display: block;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+        margin-right: 4rem;
+    }
+    .parte-uno {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0.5rem 2rem;
+        background-color: rgba(78, 85, 22, .6);
+        height: 79vh;
+        width: 44vw;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .parte-dos {
+        margin-left: 0vh;
+        margin-right: 0vh;
+        background-color: #E5E8E8;
+        margin-top: -30px;
+        height: 168vh;
+        width: 44vw;
+    }
+}

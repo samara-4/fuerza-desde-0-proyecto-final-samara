@@ -1,0 +1,102 @@
+/*Estilos del section 1 portada web*/
+.portada-web {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    animation: mostrar 1.5s ease-in-out;
+}
+@keyframes mostrar {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.portada-web img {
+    width: 432px;
+    margin-top: 68px;
+}
+/*Media queries para pantalla de 1440px*/
+@media (max-width:1440px) {
+    .portada-web img {
+        width: 432px;
+        margin-top: 9px;
+    }
+}
+/*Media queries para pantalla de 1024px*/
+@media (max-width:1024px) {
+    .portada-web img {
+        width: 394px;
+        margin-top: 23px;
+    }
+    .portada-web h2 {
+        font-size: 1.7rem;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 60px;
+        margin-top: -9px;
+        margin-left: -3px;
+    }
+    .portada-web h1 {
+        font-size: 2rem;
+        font-family: 'Rubik', sans-serif;
+        text-shadow: 4px 4px 4px rgba(78, 85, 22);
+        margin: 54px;
+    }
+}
+/*Media queries para pantalla de 768px*/
+@media (max-width:768px) {
+    .portada-web {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 56px;
+        animation: mostrar 1.5s ease-in-out;
+    }
+    .portada-web img {
+        width: 224px;
+        margin-top: -73px;
+        margin-bottom: -33px;
+    }
+    .portada-web h2 {
+        font-size: 1.4rem;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 60px;
+        margin-top: -9px;
+        margin-left: -3px;
+    }
+}
+/*Media queries para pantalla de 425px*/
+@media (max-width:425px) {
+    .portada-web {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: -476px;
+        animation: mostrar 1.5s ease-in-out;
+    }
+    .portada-web img {
+        width: 261px;
+        margin-top: -79px;
+        margin-bottom: -152px;
+    }
+    .portada-web h1 {
+        font-size: 1.3rem;
+        font-family: 'Rubik', sans-serif;
+        text-shadow: 4px 4px 4px rgba(78, 85, 22);
+        margin: 54px;
+        margin-top: 448px;
+    }
+    .portada-web h2 {
+        font-size: 1.3rem;
+        font-family: 'Rubik', sans-serif;
+        margin-bottom: 153px;
+        padding-left: 38px;
+        padding-right: 27px;
+        padding-top: 33px;
+    }
+}

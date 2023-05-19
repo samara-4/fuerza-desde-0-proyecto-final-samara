@@ -1,0 +1,450 @@
+/*Estilos pagina coaching*/
+.portada-coach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.coach-logro {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        width: 465px;
+        margin-right: 64px;
+        margin-left: 36px;
+        margin-top: 77px;
+    }
+    li {
+        list-style: none;
+    }
+}
+/*Estilos de las listas de coaching*/
+.lista-beneficios {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: left;
+    font-size: 1rem;
+    li::before {
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/vactorpesa.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 5px;
+    }
+}
+/*Estilos section dos*/
+.segunda-parte {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E8E8;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.coach-logro-dos {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+        width: 421px;
+        margin-right: 25px;
+        margin-left: 36px;
+        margin-top: 161px;
+    }
+    li {
+        list-style: none;
+    }
+}
+.parrafo {
+    margin-top: -48px;
+}
+/*Estilos section 3 coach e-book*/
+.tercera-parte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: rgba(78, 85, 22, .6);
+    height: 90vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+.titulo-ebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.e-book img {
+    width: 165px;
+    border-radius: 46%;
+    li {
+        list-style: none;
+    }
+}
+.video-p {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 4rem;
+}
+.video {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 50px;
+    margin-top: -1px;
+}
+.container {
+
+    width: 607px;
+}
+.video-responsive {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+.video-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 84%;
+    height: 83%;
+    border-radius: 15px;
+}
+/*Media queries coaching para pantalla de 1440px*/
+@media screen and (max-width:1440px) {
+    .coach-logro img {
+        width: 465px;
+        margin-right: 64px;
+        margin-left: 36px;
+        margin-top: 30px;
+    }
+    .video-p {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 4rem;
+    }
+}
+/*Media queries coaching para pantalla de 1024px*/
+@media screen and (max-width:1024px) {
+    .portada-coach {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .coach-logro {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 2rem;
+        margin-right: 5rem;
+    }
+    .coach-logro img {
+        width: 284px;
+        margin-right: 23px;
+        margin-left: 413px;
+        margin-top: -197px;
+        margin-bottom: -71px;
+    }
+    .coach-logro-dos {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 1rem;
+    }
+    .coach-logro-dos img {
+        width: 345px;
+        margin-right: 25px;
+        margin-left: 36px;
+        margin-top: -28px;
+    }
+    .video-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-top: 45px;
+        margin-left: 24px;
+    }
+    .video {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-radius: 50px;
+        margin-top: -1px;
+        width: 560px;
+        height: 315px;
+    }
+    .video-responsive iframe {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 72%;
+        height: 71%;
+        border-radius: 15px;
+        margin-left: 79px;
+    }
+}
+/*Media queries coaching para pantalla de 768px*/
+@media screen and (max-width:768px) {
+    .tercera-parte {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    background-color: rgba(78, 85, 22, .6);
+    width: 94vw;
+    height: 90vh;
+    margin-left: 0vh;
+    margin-right: 0vh;
+    }
+    .portada-coach {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: -37px;
+        h2 {
+            font-size: 1.2rem;
+            font-family: "Rubik", sans-serif;
+            margin: 7px;
+            padding: 20px;
+            margin-top: -56px;
+            margin-bottom: -13px;
+        }
+    }
+    .coach-logro {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: -3rem;
+        margin-right: 5rem;
+        img {
+            width: 251px;
+            margin-right: -8px;
+            margin-left: 555px;
+            margin-top: -215px;
+            margin-bottom: -239px;
+        }
+    }
+    p {
+        font-size: .9rem;
+        padding: 13px;
+        text-align: justify;
+    }
+    .segunda-parte {
+        margin-left: 0vh;
+        margin-right: 0vh;
+        background-color: #E5E8E8;
+        margin-top: -30px;
+        height: 105vh;
+    }
+    .lista-beneficios {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: left;
+        font-size: 1rem;
+        margin-top: 31px;
+        margin-left: -84px;
+        li {
+            margin-left: 80px;
+            list-style: none;
+        }
+    }
+    .container {
+        width: 576px;
+        margin-top: 27px;
+    }
+    .video-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 53px;
+        flex-wrap: wrap;
+    }
+    .video-responsive {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+        margin-top: 34px;
+    }
+    .titulo-ebook {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -13px;
+    }
+    .e-book img {
+        width: 119px;
+        border-radius: 35%;
+    }
+    .coach-logro-dos img {
+        width: 345px;
+        margin-right: 25px;
+        margin-left: 36px;
+        margin-top: -27px;
+    }
+    .segunda-parte h2 {
+        font-size: 1.2rem;
+        font-family: 'Rubik', sans-serif;
+        margin: 7px;
+        padding: 20px;
+        margin-top: 30px;
+        margin-bottom: 57px;
+    } 
+}
+/*Media queries coaching para pantalla de 425px*/
+@media screen and (max-width:425px) {
+    .segunda-parte {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #E5E8E8;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        width: 44vw;
+    }
+    .portada-coach {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: -395px;
+    }
+    .portada-coach h2 {
+        font-size: 1rem;
+        font-family: "Rubik", sans-serif;
+        margin: -21px;
+        padding: -2px;
+        margin-top: -48px;
+        margin-bottom: -12px;
+    }
+    .coach-logro {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: -5rem;
+        margin-right: 1rem;
+        margin-left: -13px;
+    }
+    .coach-logro img {
+        width: 201px;
+        margin-right: -8px;
+        margin-left: -5px;
+        margin-top: -62px;
+        margin-bottom: -324px;
+    }
+    .lista-beneficios {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        text-align: left;
+        font-size: 1rem;
+        margin-top: 45px;
+        margin-left: -10px;
+    }
+    .coach-logro-dos img {
+        width: 218px;
+        margin-right: 25px;
+        margin-left: 36px;
+        margin-top: -5px;
+    }
+    .tercera-parte {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 0.5rem 2rem;
+        background-color: rgba(78, 85, 22, .6);
+        width: 44vw;
+        height: 90vh;
+        margin-left: 0vh;
+        margin-right: 0vh;
+        }
+    .titulo-ebook {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -53px;
+        flex-direction: column;
+    }
+    .e-book img {
+        width: 119px;
+        border-radius: 35%;
+        margin-left: -12rem;
+    }
+    .e-book h2 {
+        font-size: 1.2rem;
+        font-family: "Rubik", sans-serif;
+        margin: 20px;
+        margin-left: -10rem;
+    }
+    .e-book p {
+        font-size: 0.9rem;
+        padding: 13px;
+        text-align: justify;
+        margin-left: -2rem;
+        margin-right: 10rem;
+    }
+    .container {
+        width: 460px;
+        margin-top: -44px;
+        margin-left: -230px;
+    }
+    .video-p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -35px;
+        margin-left: -6rem;
+        flex-wrap: nowrap;
+    }
+    .video-responsive {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%;
+        margin-top: -17px;
+        margin-left: -6rem;
+    }
+    .video-responsive iframe {
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 72%;
+        height: 71%;
+        border-radius: 15px;
+        margin-left: 79px;
+        margin-top: 51px;
+    }
+}

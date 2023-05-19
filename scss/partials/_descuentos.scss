@@ -1,0 +1,38 @@
+/*Estilos descuentos*/
+.descuento {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+/*Media queries para pantalla de 1024px*/
+@media (max-width:1024px) {
+    .descuento {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .descuento h2 {
+        font-size: 1.5rem;
+        font-family: "Rubik", sans-serif;
+        margin: 7px;
+        padding: 20px;
+    }
+}
+/*Media queries para pantalla de 768px*/
+@media (max-width:768px) {
+    .descuento {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 176vh;
+    }
+    .descuento h2 {
+        font-size: 1rem;
+        font-family: "Rubik", sans-serif;
+        margin: 7px;
+        padding: 20px;
+    }
+}
